@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
+
+:root {
+    --darkGray: rgb(41, 46, 51);
+    --white: #fff;
+    --accents: #ff93cc;
+    --transition: .3 ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: var(--transition);
+}
+
+button {
+    background: transparent;
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+button:hover {
+    color: var(--darkGray);
+    border: 1px solid var(--darkGray);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/***flex***/
+.flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*** topbar ***/
+.topbar article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar {
+    background: var(--darkGray);
+    color: var(--white);
+    padding: 10px 0;
+}
+
+.topbar i {
+    color: var(--accents);
+}
+
+.topbar a {
+    margin-left: 20px;
+}
+
+/*** nav ***/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    color: var(--accents);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px var(--darkGray);
+}
+
+nav .logo:hover {
+    color: var(--darkGray);
+    text-shadow: 1px 1px var(--accents);
+}
+
+nav ul li a {
+    color: var(--darkGray);
+    margin-left: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: var(--accents);
+}
+
+/*** footer ***/
+footer {
+    padding: 100px 0;
+    background: var(--darkGray);
+    color: var(--white);
+}
+
+footer .flexSpaceBetween {
+    align-items: flex-start;
+}
+
+footer h3 {
+    color: var(--accents);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+footer div:nth-child(1) {
+    flex: 0 0 39%;
+    line-height: 1.8rem;
+}
+
+footer div:nth-child(2) {
+    flex: 0 0 19%;
+    line-height: 1.8rem;
+
+}
+
+footer div:nth-child(2) ul {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+footer div:nth-child(3) {
+    flex: 0 0 39%;
+
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--accents);
+}
+
+footer input[type="email"] {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 10px 15px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+
+
+/***********
+HOME
+***********/
+
+/***mainHead***/
+.naslov .mainHead {
+    text-align: center;
+    color: var(--white);
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.naslov .mainHead h1 {
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.naslov .mainHead p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.socials {
+    display: inline-block;
+    background: var(--white);
+    position: relative;
+    top: -300px;
+}
+
+.socials i {
+    font-size: 1.2rem;
+    padding: 5px;
+    transition: var(--transition);
+}
+
+.socials i:hover {
+    opacity: .5;
+}
+
+.socials .fa-facebook-square {
+    color: rgb(81, 81, 153);
+}
+
+.socials .fa-youtube-square {
+    color: crimson;
+}
+
+.socials .fa-instagram {
+    color: brown;
+}
+
+.socials .fa-pinterest-square {
+    color: rgb(136, 17, 41);
+}
+
+/***destinacija***/
+.destinacije {
+    margin-top: -50px;
+}
+
+.destinacije .naslov {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.destinacije .naslov h2 {
+    padding-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.destinacije .naslov p {
+    background: var(--accents);
+    color: var(--white);
+    font-weight: 600;
+    text-shadow: 1px 1px 2px gray;
+    display: inline;
+    padding: 10px 20px;
+}
+
+.destinacije article .wrapper {
+    flex: 0 0 29%;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.destinacije .zemlja i {
+    color: var(--accents);
+}
+
+.destinacije .wrapper .zemlja p {
+    color: var(--darkGray);
+    padding: 10px 0;
+}
+
+
+/*********
+PONUDA
+*********/
+.naslov_ponuda {
+    height: 400px;
+}
+
+.naslov_ponuda .mainHead {
+    align-items: flex-end;
+    color: var(--white);
+    background-image: linear-gradient(rgba(1, 46, 51, .5),
+            rgba(1, 46, 51, .5)),
+        url(../img/headers.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+}
+
+.naslov_ponuda .mainHead h1 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.naslov_ponuda .mainHead p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.naslov_ponuda .socials {
+    display: inline-block;
+    background: var(--white);
+    position: relative;
+    top: -200px;
+}
+
+.naslov_ponuda .socials i {
+    font-size: 1.2rem;
+    padding: 5px;
+    transition: var(--transition);
+}
+
+/***ponuda***/
+.ponuda section:first-child {
+    text-align: center;
+}
+
+.ponuda {
+    padding: 0 0 50px 0;
+}
+
+.ponuda .paketi article {
+    flex: 0 0 50%;
+}
+
+.ponuda section h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.ponuda .paketi {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    margin-top: 30px;
+}
+
+.ponuda .paketi .ponude div div {
+    flex: 0 0 50%;
+}
+
+.ponuda .ponude div .cene {
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.ponuda .ponude div .cene h4 {
+    color: var(--accents);
+    text-shadow: 1px 1px var(--darkGray);
+}
+
+.ponuda .ponude div .cene p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: .9rem;
+}
+
+.ponuda .ponude div:nth-child(odd) .cene {
+    order: -1;
+}
