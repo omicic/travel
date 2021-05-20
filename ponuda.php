@@ -39,9 +39,11 @@
                 </div>
             </div>
             <div class="najboljeLokacije flexSpaceBetween">
-                <div class="imagecena"><img src="img/ponuda3.jpg" alt=""></div>
+                <div class="imagecena">
+                    <img src="img/ponuda3.jpg" alt="">
+                </div>
                 <div class="cene flexColumn">
-                    <h4>Najbolje cene</h4>
+                    <h4>Najbolje lokacije</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur eos, ratione quo
                         veniam tenetur suscipit excepturi architecto repudiandae, hic inventore qui placeat sapiente
                         quae!</p>

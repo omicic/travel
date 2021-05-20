@@ -81,6 +81,7 @@ img {
 .topbar article {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .topbar {
@@ -97,15 +98,35 @@ img {
     margin-left: 20px;
 }
 
+@media(max-width:767px) {
+    .topbar article {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topbar i {
+        padding-top: 10px;
+    }
+}
+
 /*** nav ***/
 nav {
-    display: flex;
-    justify-content: space-between;
     padding: 10px 0;
 }
 
-nav ul {
-    display: flex;
+@media(max-width:767px) {
+
+    nav.flexSpaceBetween {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 30px;
+    }
+
+    nav ul li a {
+        margin-left: 0px !important;
+    }
 }
 
 nav .logo {
@@ -164,11 +185,8 @@ footer div:nth-child(2) ul {
     justify-content: flex-start;
 }
 
-
-
 footer div:nth-child(3) {
     flex: 0 0 39%;
-
 }
 
 footer a {
@@ -188,12 +206,36 @@ footer input[type="email"] {
     margin-top: 20px;
 }
 
+@media(max-width:767px) {
+    footer {
+        padding: 50px 0;
+    }
+
+    footer div:nth-child(1) {
+        flex: 0 0 100%;
+    }
+
+    footer h3 {
+        color: var(--accents);
+        font-size: 1.5rem;
+        margin: 40px 0 10px 0;
+    }
+
+    footer input[type="email"] {
+        padding: 10px 15px;
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    footer button {
+        margin-top: 10px;
+    }
+}
 
 
 /***********
 HOME
 ***********/
-
 /***mainHead***/
 .naslov .mainHead {
     text-align: center;
@@ -214,6 +256,21 @@ HOME
     padding-bottom: 20px;
     font-weight: 300;
 }
+
+@media(max-width:767px) {
+
+    .naslov .mainHead h1 {
+        font-size: 2.5rem;
+    }
+
+    .destinacije .naslov p {
+        font-size: .8rem;
+        padding-bottom: 10px;
+        font-weight: 300;
+        display: block !important;
+    }
+}
+
 
 .socials {
     display: inline-block;
@@ -289,12 +346,17 @@ HOME
     padding: 10px 0;
 }
 
+@media(max-width:767px) {
+    .destinacije article .wrapper {
+        flex: 0 0 100%;
+    }
+}
 
 /*********
 PONUDA
 *********/
 .naslov_ponuda {
-    height: 400px;
+    height: 500px;
 }
 
 .naslov_ponuda .mainHead {
@@ -330,6 +392,34 @@ PONUDA
     font-size: 1.2rem;
     padding: 5px;
     transition: var(--transition);
+}
+
+@media(max-width:766px) {
+
+    .naslov_ponuda .mainHead h1 {
+        font-size: 2.5rem;
+    }
+
+    .ponuda .paketi .imageprva {
+        flex: 0 0 100%;
+    }
+
+    .ponuda .paketi .ponude {
+        flex: 0 0 100%;
+    }
+
+    .ponuda .paketi .ponude .najboljecene div,
+    .ponuda .paketi .ponude .najboljeLokacije div {
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+
+    .ponuda .paketi .ponude .najboljeLokacije div:nth-child(2) {
+        order: -1;
+
+    }
+
+
 }
 
 /***ponuda***/
@@ -379,3 +469,8 @@ PONUDA
 .ponuda .ponude div:nth-child(odd) .cene {
     order: -1;
 }
+
+
+/**************
+RESPONSIVE
+**************/
